@@ -1,3 +1,9 @@
+<p align="center"><img src="https://raw.githubusercontent.com/arthurlynow098/arthurlynow098/main/assets/ars-codex-banner.png" alt="Arthur Mendes Entsev — gravura alquímica minimalista" width="100%"></p>
+
+<p align="center"><sub>☉ &nbsp; ARS CODEX &nbsp; · &nbsp; lynow-corp-platform &nbsp; ☽</sub></p>
+
+---
+
 # Lynow Corp - Plataforma de Micro-Jobs
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
@@ -55,3 +61,7 @@ GET /usuarios: Retorna a lista de todos os usuários cadastrados.
 POST /usuarios: Cadastra um novo usuário no sistema (Requer envio de JSON no Body).
 
 Projeto desenvolvido com foco em Clean Code, SOLID e Arquitetura MVC.
+
+---
+
+<p align="center"><sub>☿ &nbsp; Estudo · construção · evolução &nbsp; ☿</sub><br><a href="https://github.com/arthurlynow098">Perfil</a> · <a href="https://arthurentsev.vercel.app/">Portfólio</a></p>
