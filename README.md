@@ -4,7 +4,7 @@
 
 <p align="center">Back-end para conectar clientes e profissionais em serviços pontuais.</p>
 
-<p align="center"><img src="assets/docs/tags.svg" alt="Java · Spring Boot · MySQL" width="72%"></p>
+<p align="center"><img src="assets/docs/tags.svg" alt="Java · Spring Boot · MySQL" width="100%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
@@ -16,11 +16,12 @@
 
 ![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
 
-| Área | O que você encontra | Acesso direto |
-|---|---|---|
-| **API** | Controlador de usuários. | [Abrir api →](lynow-api/Backend-api/src/main/java/com/lynow/lynow_api/controller/UsuarioController.java) |
-| **Modelo** | Representação dos dados de usuário. | [Abrir modelo →](lynow-api/Backend-api/src/main/java/com/lynow/lynow_api/model/Usuario.java) |
-| **Persistência** | Interface de acesso aos dados. | [Abrir persistência →](lynow-api/Backend-api/src/main/java/com/lynow/lynow_api/repository/UsuarioRepository.java) |
+<table width="100%">
+<tr><th align="left">Área</th><th align="left">O que você encontra</th><th align="left">Acesso direto</th></tr>
+<tr><td><strong>API</strong></td><td>Controlador de usuários.</td><td><a href="lynow-api/Backend-api/src/main/java/com/lynow/lynow_api/controller/UsuarioController.java">Abrir api →</a></td></tr>
+<tr><td><strong>Modelo</strong></td><td>Representação dos dados de usuário.</td><td><a href="lynow-api/Backend-api/src/main/java/com/lynow/lynow_api/model/Usuario.java">Abrir modelo →</a></td></tr>
+<tr><td><strong>Persistência</strong></td><td>Interface de acesso aos dados.</td><td><a href="lynow-api/Backend-api/src/main/java/com/lynow/lynow_api/repository/UsuarioRepository.java">Abrir persistência →</a></td></tr>
+</table>
 
 <a id="visão-geral"></a>
 
