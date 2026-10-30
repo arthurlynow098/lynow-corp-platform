@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="assets/project-animal.png" alt="Emblema de lynow-corp-platform" width="144" height="144">
+  <img src="assets/banner-v2.png" alt="lynow-corp-platform" width="100%">
 </p>
-
-<h1 align="center">lynow-corp-platform</h1>
 
 <p align="center">Back-end para conectar clientes e profissionais em serviços pontuais.</p>
 
