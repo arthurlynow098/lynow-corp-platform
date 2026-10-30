@@ -4,21 +4,33 @@
 
 <p align="center">Back-end para conectar clientes e profissionais em serviços pontuais.</p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Java-C52E36?style=flat-square" alt="Java">
-  <img src="https://img.shields.io/badge/Spring%20Boot-24272E?style=flat-square" alt="Spring Boot">
-  <img src="https://img.shields.io/badge/MySQL-24272E?style=flat-square" alt="MySQL">
-</p>
+<p align="center"><img src="assets/docs/tags.svg" alt="Java · Spring Boot · MySQL" width="72%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
 ---
 
-## Visão geral
+<a id="explore-o-projeto"></a>
+
+![Explore o projeto](assets/docs/section-01.svg)
+
+![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
+
+| Área | O que você encontra | Acesso direto |
+|---|---|---|
+| **API** | Controlador de usuários. | [Abrir api →](lynow-api/Backend-api/src/main/java/com/lynow/lynow_api/controller/UsuarioController.java) |
+| **Modelo** | Representação dos dados de usuário. | [Abrir modelo →](lynow-api/Backend-api/src/main/java/com/lynow/lynow_api/model/Usuario.java) |
+| **Persistência** | Interface de acesso aos dados. | [Abrir persistência →](lynow-api/Backend-api/src/main/java/com/lynow/lynow_api/repository/UsuarioRepository.java) |
+
+<a id="visão-geral"></a>
+
+![Visão geral](assets/docs/section-02.svg)
 
 Estruturado como um monorepo, o projeto reúne a modelagem relacional em **MySQL** (usuários, oportunidades e chaves estrangeiras) e o motor back-end em **Java 17 com Spring Boot**, aplicando arquitetura em camadas (Controller, Model e Repository) e persistência automatizada via **Spring Data JPA / Hibernate**.
 
-## Recursos
+<a id="recursos"></a>
+
+![Recursos](assets/docs/section-03.svg)
 
 | Recurso | Como funciona |
 |---|---|
@@ -28,7 +40,9 @@ Estruturado como um monorepo, o projeto reúne a modelagem relacional em **MySQL
 | Endpoint de Diagnóstico | RecepcaoController oferece verificação rápida de disponibilidade e resposta da API. |
 | Monorepo Banco + API | Scripts SQL de criação de tabelas e carga inicial ficam versionados ao lado da aplicação Spring Boot. |
 
-## Tecnologias
+<a id="tecnologias"></a>
+
+![Tecnologias](assets/docs/section-04.svg)
 
 - **Java 17 & Spring Boot** para construção do servidor web embutido e injeção de dependências;
 - **Spring Data JPA / Hibernate** para persistência objeto-relacional;
@@ -54,7 +68,7 @@ flowchart LR
 ```text
 lynow-corp-platform/
 ├── assets/
-│   └── project-animal.png          Emblema do projeto
+│   └── banner-v2.png               Banner do projeto
 ├── lynow-api/
 │   └── Backend-api/
 │       ├── src/main/java/com/lynow/lynow_api/
@@ -71,7 +85,9 @@ lynow-corp-platform/
 
 </details>
 
-## Como executar
+<a id="como-executar"></a>
+
+![Como executar](assets/docs/section-05.svg)
 
 1. Clone o repositório:
    ```bash
@@ -89,7 +105,9 @@ lynow-corp-platform/
    ```
 4. Teste os endpoints em http://localhost:8080/usuarios via Postman, Insomnia ou curl.
 
-## Decisões técnicas
+<a id="decisões-técnicas"></a>
+
+![Decisões técnicas](assets/docs/section-06.svg)
 
 - **Padrão Repository com Spring Data JPA:** reduz drasticamente o código repetitivo de acesso a dados e garante transações seguras.
 - **Separação em camadas (controller, model, repository):** prepara o terreno para a inclusão de regras de negócio e autenticação JWT na camada de serviço.
