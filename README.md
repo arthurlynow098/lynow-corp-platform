@@ -1,49 +1,52 @@
 <p align="center">
-  <img src="assets/banner-v2.png" alt="lynow-corp-platform" width="100%">
+  <img src="assets/identity/banner.png" alt="lynow-corp-platform" width="100%">
 </p>
 
 <p align="center">Back-end para conectar clientes e profissionais em serviços pontuais.</p>
 
-<p align="center"><img src="assets/docs/tags.svg" alt="Java · Spring Boot · MySQL" width="100%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
----
+<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
 
 <a id="explore-o-projeto"></a>
 
-![Explore o projeto](assets/docs/section-01.svg)
+## Por onde começar
 
-![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
 
-<table width="100%">
-<tr><th align="left">Área</th><th align="left">O que você encontra</th><th align="left">Acesso direto</th></tr>
-<tr><td><strong>API</strong></td><td>Controlador de usuários.</td><td><a href="lynow-api/Backend-api/src/main/java/com/lynow/lynow_api/controller/UsuarioController.java">Abrir api →</a></td></tr>
-<tr><td><strong>Modelo</strong></td><td>Representação dos dados de usuário.</td><td><a href="lynow-api/Backend-api/src/main/java/com/lynow/lynow_api/model/Usuario.java">Abrir modelo →</a></td></tr>
-<tr><td><strong>Persistência</strong></td><td>Interface de acesso aos dados.</td><td><a href="lynow-api/Backend-api/src/main/java/com/lynow/lynow_api/repository/UsuarioRepository.java">Abrir persistência →</a></td></tr>
-</table>
+- **[API](lynow-api/Backend-api/src/main/java/com/lynow/lynow_api/controller/UsuarioController.java)** — Controlador de usuários.
+- **[Modelo](lynow-api/Backend-api/src/main/java/com/lynow/lynow_api/model/Usuario.java)** — Representação dos dados de usuário.
+- **[Persistência](lynow-api/Backend-api/src/main/java/com/lynow/lynow_api/repository/UsuarioRepository.java)** — Interface de acesso aos dados.
+
 
 <a id="visão-geral"></a>
 
-![Visão geral](assets/docs/section-02.svg)
+## Visão geral
 
 Estruturado como um monorepo, o projeto reúne a modelagem relacional em **MySQL** (usuários, oportunidades e chaves estrangeiras) e o motor back-end em **Java 17 com Spring Boot**, aplicando arquitetura em camadas (Controller, Model e Repository) e persistência automatizada via **Spring Data JPA / Hibernate**.
 
 <a id="recursos"></a>
 
-![Recursos](assets/docs/section-03.svg)
+## Recursos
 
-| Recurso | Como funciona |
-|---|---|
-| API RESTful de Usuários | UsuarioController expõe endpoints HTTP (GET /usuarios e POST /usuarios) com serialização JSON automática. |
-| Mapeamento ORM com JPA | A entidade Usuario mapeia colunas, tipos e restrições diretamente para o schema relacional do MySQL. |
-| Repositório Desacoplado | UsuarioRepository estende JpaRepository, fornecendo operações CRUD transacionais sem SQL boilerplate. |
-| Endpoint de Diagnóstico | RecepcaoController oferece verificação rápida de disponibilidade e resposta da API. |
-| Monorepo Banco + API | Scripts SQL de criação de tabelas e carga inicial ficam versionados ao lado da aplicação Spring Boot. |
+**API RESTful de Usuários**<br>
+UsuarioController expõe endpoints HTTP (GET /usuarios e POST /usuarios) com serialização JSON automática.
+
+**Mapeamento ORM com JPA**<br>
+A entidade Usuario mapeia colunas, tipos e restrições diretamente para o schema relacional do MySQL.
+
+**Repositório Desacoplado**<br>
+UsuarioRepository estende JpaRepository, fornecendo operações CRUD transacionais sem SQL boilerplate.
+
+**Endpoint de Diagnóstico**<br>
+RecepcaoController oferece verificação rápida de disponibilidade e resposta da API.
+
+**Monorepo Banco + API**<br>
+Scripts SQL de criação de tabelas e carga inicial ficam versionados ao lado da aplicação Spring Boot.
 
 <a id="tecnologias"></a>
 
-![Tecnologias](assets/docs/section-04.svg)
+## Tecnologias
 
 - **Java 17 & Spring Boot** para construção do servidor web embutido e injeção de dependências;
 - **Spring Data JPA / Hibernate** para persistência objeto-relacional;
@@ -69,7 +72,7 @@ flowchart LR
 ```text
 lynow-corp-platform/
 ├── assets/
-│   └── banner-v2.png               Banner do projeto
+│   └── identity/banner.png               Banner do projeto
 ├── lynow-api/
 │   └── Backend-api/
 │       ├── src/main/java/com/lynow/lynow_api/
@@ -88,7 +91,7 @@ lynow-corp-platform/
 
 <a id="como-executar"></a>
 
-![Como executar](assets/docs/section-05.svg)
+## Como executar
 
 1. Clone o repositório:
    ```bash
@@ -108,12 +111,12 @@ lynow-corp-platform/
 
 <a id="decisões-técnicas"></a>
 
-![Decisões técnicas](assets/docs/section-06.svg)
+## Decisões técnicas
 
 - **Padrão Repository com Spring Data JPA:** reduz drasticamente o código repetitivo de acesso a dados e garante transações seguras.
 - **Separação em camadas (controller, model, repository):** prepara o terreno para a inclusão de regras de negócio e autenticação JWT na camada de serviço.
 
----
+<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
 
 <p align="center">
   <a href="https://github.com/arthurlynow098">GitHub</a> &nbsp;·&nbsp;
