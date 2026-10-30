@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="assets/identity/banner.png" alt="lynow-corp-platform" width="100%">
-</p>
+<p align="center"><img src="assets/lynow-corp-platform-banner.jpg" width="100%" alt="lynow-corp-platform"></p>
 
 <p align="center">Back-end para conectar clientes e profissionais em serviços pontuais.</p>
 
