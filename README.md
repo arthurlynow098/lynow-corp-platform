@@ -1,11 +1,11 @@
-<p align="center"><img src="assets/lynow-corp-platform-banner.jpg" width="100%" alt="lynow-corp-platform"></p>
+<p align="center"><img src="assets/identity-v2/banner.png" alt="Lynow Corp — Serviços · profissionais · conexões" width="100%"></p>
 
 <p align="center">Back-end para conectar clientes e profissionais em serviços pontuais.</p>
 
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
-<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
+---
 
 <a id="explore-o-projeto"></a>
 
@@ -19,7 +19,7 @@
 
 <a id="visão-geral"></a>
 
-## Visão geral
+## Sobre o projeto
 
 Estruturado como um monorepo, o projeto reúne a modelagem relacional em **MySQL** (usuários, oportunidades e chaves estrangeiras) e o motor back-end em **Java 17 com Spring Boot**, aplicando arquitetura em camadas (Controller, Model e Repository) e persistência automatizada via **Spring Data JPA / Hibernate**.
 
@@ -51,8 +51,8 @@ Scripts SQL de criação de tabelas e carga inicial ficam versionados ao lado da
 - **MySQL** como banco de dados relacional na porta 3306;
 - **Maven Wrapper (mvnw / mvnw.cmd)** para build reproduzível sem exigir instalação global do Maven.
 
-<details>
-<summary>Arquitetura</summary>
+## Arquitetura
+
 
 ```mermaid
 flowchart LR
@@ -62,10 +62,9 @@ flowchart LR
     D --> E["(MySQL · lynow_db)"]
 ```
 
-</details>
 
-<details>
-<summary>Estrutura do repositório</summary>
+## Estrutura do repositório
+
 
 ```text
 lynow-corp-platform/
@@ -85,7 +84,6 @@ lynow-corp-platform/
 └── README.md
 ```
 
-</details>
 
 <a id="como-executar"></a>
 
@@ -114,10 +112,16 @@ lynow-corp-platform/
 - **Padrão Repository com Spring Data JPA:** reduz drasticamente o código repetitivo de acesso a dados e garante transações seguras.
 - **Separação em camadas (controller, model, repository):** prepara o terreno para a inclusão de regras de negócio e autenticação JWT na camada de serviço.
 
-<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
+---
 
 <p align="center">
   <a href="https://github.com/arthurlynow098">GitHub</a> &nbsp;·&nbsp;
   <a href="https://arthurentsev.vercel.app/">Portfólio</a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/entsevarthur/">LinkedIn</a>
 </p>
+
+## Identidade visual e créditos
+
+**Lobo** — Cooperação entre integrantes de uma rede. [Logo em PNG](assets/identity-v2/logo.png).
+
+Identidade organizada a partir das artes fornecidas por Arthur Entsev. Direção visual e organização documental inspiradas em [LynowCut](https://github.com/arthurlynow098/LynowCut) e [LynowCatch](https://github.com/arthurlynow098/LynowCatch). Tipografia **Inter**, com licença SIL Open Font License em [Inter-OFL.txt](assets/identity-v2/Inter-OFL.txt).
