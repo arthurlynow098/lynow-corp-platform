@@ -1,15 +1,24 @@
-<p align="center"><img src="assets/identity-v2/banner.png" alt="Lynow Corp — Serviços · profissionais · conexões" width="100%"></p>
+<a id="top"></a>
+
+<p align="center"><img src="assets/identity-v2/banner.png" alt="Lynow Corp" width="100%"></p>
 
 <p align="center">Back-end para conectar clientes e profissionais em serviços pontuais.</p>
+
+<p align="center">
+<img alt="Java" src="https://img.shields.io/badge/Java-2877B8?style=for-the-badge&amp;logo=openjdk&amp;logoColor=white">
+<img alt="Spring Boot" src="https://img.shields.io/badge/Spring%20Boot-2877B8?style=for-the-badge&amp;logo=springboot&amp;logoColor=white">
+<img alt="MySQL" src="https://img.shields.io/badge/MySQL-2877B8?style=for-the-badge&amp;logo=mysql&amp;logoColor=white">
+</p>
 
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
----
 
 <a id="explore-o-projeto"></a>
 
-## Por onde começar
+<a id="por-onde-começar"></a>
+
+<p><img src="assets/identity-v2/section-01.svg" alt="Por onde começar" width="100%"></p>
 
 
 - **[API](lynow-api/Backend-api/src/main/java/com/lynow/lynow_api/controller/UsuarioController.java)** — Controlador de usuários.
@@ -19,13 +28,17 @@
 
 <a id="visão-geral"></a>
 
-## Sobre o projeto
+<a id="sobre-o-projeto"></a>
+
+<p><img src="assets/identity-v2/section-02.svg" alt="Sobre o projeto" width="100%"></p>
 
 Estruturado como um monorepo, o projeto reúne a modelagem relacional em **MySQL** (usuários, oportunidades e chaves estrangeiras) e o motor back-end em **Java 17 com Spring Boot**, aplicando arquitetura em camadas (Controller, Model e Repository) e persistência automatizada via **Spring Data JPA / Hibernate**.
 
 <a id="recursos"></a>
 
-## Recursos
+
+
+<p><img src="assets/identity-v2/section-03.svg" alt="Recursos" width="100%"></p>
 
 **API RESTful de Usuários**<br>
 UsuarioController expõe endpoints HTTP (GET /usuarios e POST /usuarios) com serialização JSON automática.
@@ -44,14 +57,18 @@ Scripts SQL de criação de tabelas e carga inicial ficam versionados ao lado da
 
 <a id="tecnologias"></a>
 
-## Tecnologias
+
+
+<p><img src="assets/identity-v2/section-04.svg" alt="Tecnologias" width="100%"></p>
 
 - **Java 17 & Spring Boot** para construção do servidor web embutido e injeção de dependências;
 - **Spring Data JPA / Hibernate** para persistência objeto-relacional;
 - **MySQL** como banco de dados relacional na porta 3306;
 - **Maven Wrapper (mvnw / mvnw.cmd)** para build reproduzível sem exigir instalação global do Maven.
 
-## Arquitetura
+<a id="arquitetura"></a>
+
+<p><img src="assets/identity-v2/section-05.svg" alt="Arquitetura" width="100%"></p>
 
 
 ```mermaid
@@ -63,7 +80,9 @@ flowchart LR
 ```
 
 
-## Estrutura do repositório
+<a id="estrutura-do-repositório"></a>
+
+<p><img src="assets/identity-v2/section-06.svg" alt="Estrutura do repositório" width="100%"></p>
 
 
 ```text
@@ -87,7 +106,9 @@ lynow-corp-platform/
 
 <a id="como-executar"></a>
 
-## Como executar
+
+
+<p><img src="assets/identity-v2/section-07.svg" alt="Como executar" width="100%"></p>
 
 1. Clone o repositório:
    ```bash
@@ -107,12 +128,13 @@ lynow-corp-platform/
 
 <a id="decisões-técnicas"></a>
 
-## Decisões técnicas
+
+
+<p><img src="assets/identity-v2/section-08.svg" alt="Decisões técnicas" width="100%"></p>
 
 - **Padrão Repository com Spring Data JPA:** reduz drasticamente o código repetitivo de acesso a dados e garante transações seguras.
 - **Separação em camadas (controller, model, repository):** prepara o terreno para a inclusão de regras de negócio e autenticação JWT na camada de serviço.
 
----
 
 <p align="center">
   <a href="https://github.com/arthurlynow098">GitHub</a> &nbsp;·&nbsp;
@@ -120,8 +142,12 @@ lynow-corp-platform/
   <a href="https://www.linkedin.com/in/entsevarthur/">LinkedIn</a>
 </p>
 
-## Identidade visual e créditos
+<a id="identidade-e-créditos"></a>
 
-**Lobo** — Cooperação entre integrantes de uma rede. [Logo em PNG](assets/identity-v2/logo.png).
+<p><img src="assets/identity-v2/section-09.svg" alt="Identidade e créditos" width="100%"></p>
 
-Identidade organizada a partir das artes fornecidas por Arthur Entsev. Direção visual e organização documental inspiradas em [LynowCut](https://github.com/arthurlynow098/LynowCut) e [LynowCatch](https://github.com/arthurlynow098/LynowCatch). Tipografia **Inter**, com licença SIL Open Font License em [Inter-OFL.txt](assets/identity-v2/Inter-OFL.txt).
+<table><tr><td width="150"><img src="assets/identity-v2/logo.png" alt="Lobo" width="130"></td><td><strong>Lobo</strong><br>Cooperação entre integrantes de uma rede.<br><br><a href="assets/identity-v2/logo.png">Logo em PNG</a> · <a href="assets/identity-v2/banner.png">Banner em PNG</a></td></tr></table>
+
+Artes da coleção fornecida por **Arthur Entsev**, com adaptação das logos e acabamento dos banners realizados com auxílio de geração de imagens. Referências de identidade e apresentação: [LynowCut](https://github.com/arthurlynow098/LynowCut), [LynowMic](https://github.com/arthurlynow098/LynowMic) e [LynowCatch](https://github.com/arthurlynow098/LynowCatch). Os créditos e avisos do conteúdo original foram preservados.
+
+<p align="center"><a href="#top">Voltar ao topo ↑</a> · <a href="https://github.com/arthurlynow098">Arthur Entsev</a> · <a href="https://arthurentsev.vercel.app/">Portfólio</a></p>
